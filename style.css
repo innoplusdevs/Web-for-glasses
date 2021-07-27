@@ -219,6 +219,10 @@ body {
   z-index: 2;
 }
 
+#circle-container{
+  display: none;
+}
+
 @media screen and (max-width: 1023px) {
   body {
     margin: 0;
