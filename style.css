@@ -325,6 +325,50 @@ body {
   #hero-img {
     display: none;
   }
+
+  #circle-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0.5rem;
+  }
+
+  .circle {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    animation: 5s wave infinite alternate ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 25%;
+  }
+
+  .circle.b {
+    animation-delay: 1s;
+  }
+
+  .circle.c {
+    animation-delay: 2s;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(-80, 30);
+    }
+
+    100% {
+      transform: translate(160px, -60px);
+    }
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -338,5 +382,9 @@ body {
     left: -10px;
     right: 0;
     top: 18%;
+  }
+
+  #circle-container {
+    display: none;
   }
 }
