@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "Euclid Circular A";
+  src: url("fonts/EuclidCircularA-Light.ttf");
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Euclid Circular A";
+  margin: 0.6rem;
+  padding: 0.8rem;
+  padding-left: 0;
+}
+
+#nav-container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 0.57fr 0.43fr;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  color: #d7d7d7;
+  position: relative;
+}
+
+#home {
+  margin: 0;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.elipse {
+  z-index: 3;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  right: 0rem;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: rotate(-28deg);
+}
+
+#nav-links a:hover {
+  color: black;
+}
+
+#nav-links a:active {
+  color: black;
+  transform: scale(0.8);
+}
+
+#company-name {
+  text-decoration: none;
+  font-size: 2.25em;
+  color: black;
+  font-weight: bold;
+}
+
+#company-name-mobile {
+  display: none;
+}
+
+#nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.icon {
+  width: 1.35rem;
+  margin-left: 2.1rem;
+  padding: 0.2rem;
+}
+
+#user-icon {
+  margin-right: 5.3rem;
+}
+
+#search-icon {
+  margin: 0;
+}
+
+#nav-icons figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#nav-icons img:hover {
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+#online-circle {
+  width: 6px;
+  height: 6px;
+  background-color: chartreuse;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  margin-top: 0.5rem;
+  padding: 0rem;
+  z-index: 3;
+}
+
+#sign-in {
+  z-index: 3;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 15%;
+  padding-top: 0rem;
+}
+
+#sign-in h1 {
+  font-size: 8em;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 2.7rem;
+  padding: 0;
+  line-height: 1.1;
+}
+
+#sign-in p {
+  font-size: 1em;
+  margin: 0;
+  line-height: 1.5;
+  padding-left: 1rem;
+  letter-spacing: 4.3px;
+}
+
+#sign-in button {
+  margin: 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  color: white;
+  background-color: black;
+  border: none;
+  width: 37%;
+}
+
+#sign-in button:active {
+  transform: scale(0.75);
+}
+
+.social {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  margin-top: 4rem;
+  margin-left: 1rem;
+}
+
+.social-link {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-right: 3rem;
+}
+
+.social-link:hover {
+  transform: scale(1.5);
+}
+
+#hero-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+#post {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 75.5%;
+  height: 73.4%;
+  z-index: 2;
+  right: 2.9%;
+  top: 1%;
+  z-index: 3;
+}
+
+#square {
+  position: absolute;
+  width: 76%;
+  height: 75%;
+  top: 19%;
+  right: 7%;
+  background-color: #e3dcec;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav-container {
+    display: flex;
+  }
+
+  #nav-links {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+  .link {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #d7d7d7;
+    position: relative;
+  }
+
+  #company-name {
+    display: none;
+  }
+
+  #company-name-mobile {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    left: 3%;
+  }
+
+  #home {
+    margin: 0;
+    padding: 0.6rem 01rem;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+
+  #nav-icons {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 14%;
+  }
+
+  .icon {
+    width: 1.35rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  #search-icon {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  #online-circle {
+    width: 6px;
+    height: 6px;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50px;
+  }
+
+  #hero {
+    display: block;
+    position: relative;
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 0rem;
+    z-index: 3;
+  }
+
+  #sign-in {
+    z-index: 3;
+    margin: 0;
+    padding-left: 15%;
+  }
+
+  #sign-in h1 {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 2.7rem;
+    padding: 0;
+    line-height: 1.1;
+  }
+
+  #hero-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  #nav-container {
+    display: block;
+  }
+
+  #nav-icons {
+    display: block;
+    position: fixed;
+    left: -10px;
+    right: 0;
+    top: 18%;
+  }
+}
