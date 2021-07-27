@@ -384,7 +384,24 @@ body {
     top: 18%;
   }
 
-  #circle-container {
-    display: none;
+  .circle {
+    width: 80px;
+    height: 80px;
+    top: unset;
+    bottom: 50px;
+  }
+
+  @keyframes wave {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(-80, 30);
+    }
+
+    100% {
+      transform: translate(100px, -60px);
+    }
   }
 }
